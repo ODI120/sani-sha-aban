@@ -34,11 +34,13 @@ img{
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
     --bs-primary-white: #e3edf7;
-    --bs-sky-blue: #0099d3;
+    --bs-sky-blue: #840c24;
+    /* --bs-sky-blue: #0099d3; */
 }
 body{
     color: var(--bs-dark)!important;
     background-color: var(--bs-primary-white)!important;
+    overflow-x: hidden;
 }
 .top-contact, .top-socials{
     display: flex;
@@ -83,7 +85,6 @@ nav ul{
 /* ------------------------------------ */
 .hero-card{
     padding: 16px;
-    /* background-color: mediumpurple; */
     box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.15),
     -3px -3px 3px 1px rgba(0, 0, 0, 0.15);
     position: relative;
@@ -126,7 +127,7 @@ nav ul{
 .hero-right-card{
     margin-bottom: 10px;
 }
-.hero-right-card h6{
+.hero-right-card h5{
     color: var(--bs-sky-blue);
 }
 .hero-right-card p{
@@ -151,7 +152,50 @@ nav ul{
 /* .carousel-item{
     
 } */
-
+.page-ribbon{
+    display: flex;
+    /* justify-content: space-between; */
+    height: 3rem;
+    background-color: var(--bs-sky-blue);
+    align-items: center;
+    color: var(--bs-white);
+    margin-bottom: 2rem;
+    /* overflow: hidden; */
+    width: 3000px;
+}
+.robbon-scroll{
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    /* background-color: #495057; */
+    animation: scroll-x 10s linear infinite;
+    width: 900px;
+}
+@keyframes scroll-x {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.robbon-scroll h6 i{
+    font-size: larger!important;
+}
+.qoute-text{
+    font-size: small;
+    line-height: 1.3;
+    font-style: italic;
+    margin-top: 1rem;
+    padding: 13px;
+    color: var(--bs-primary-white);
+    
+}
+.quote{
+    background-color: #6c757d;
+    border-radius: 10px;
+    height: 110px;
+}
 .carousel-inner img{
     height: 380px;
 }
@@ -163,9 +207,11 @@ nav ul{
 }
 /* .............. */
 .trend {
-    background-color: #212529;
+    background-color: var(--bs-gray-100);
     margin-bottom: 10px;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.15),
+    -3px -3px 3px 1px rgba(0, 0, 0, 0.15);
 }
 .trend p{
     color: var(--bs-gray-500);
@@ -177,5 +223,5 @@ nav ul{
     border-radius: 10px;
 }
 .trend-card h5{
-color: #0099d3;
+color: var(--bs-sky-blue);
 }
