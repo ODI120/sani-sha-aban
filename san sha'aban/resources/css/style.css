@@ -258,7 +258,7 @@ nav ul{
     font-weight: 700;
 }
 .trends p{
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 /* ------------------- */
@@ -277,4 +277,10 @@ nav ul{
     color: var(--bs-headings);
     top: 10px;
     font-weight: 700;
+}
+/* --------------------- */
+
+.politics img{
+    height: 100px;
+    width: 100px;
 }
