@@ -273,8 +273,13 @@ color: var(--bs-sky-blue);
 .ads{
     padding: 14px;
     background-color: var(--bs-gray-100);
+    line-height: 1.2;
+    font-size: 14px;
 }
 .ads img{
     width: 100%;
     height: 200px;
+}
+.ads {
+
 }
