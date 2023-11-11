@@ -12,10 +12,12 @@ img{
 }
 .btn-primary{
     background-color: var(--bs-sky-blue) !important;
+    border: 0px !important;
+    width: 100%;
 }
 .common{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 :root{
     --bs-black: #000;
@@ -34,25 +36,38 @@ img{
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
     --bs-primary-white: #e3edf7;
-    --bs-sky-blue: #840c24;
-    /* --bs-sky-blue: #0099d3; */
+    /* --bs-sky-blue: #840c24; */
+    --bs-sky-blue: #0099d3;
+    --bs-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.15),
+    -3px -3px 3px 1px rgba(0, 0, 0, 0.15);
 }
 body{
     color: var(--bs-dark)!important;
     background-color: var(--bs-primary-white)!important;
     overflow-x: hidden;
 }
+.top-contact {
+    height: 2.4rem;
+    background-color: var(--bs-gray-900);
+    margin-bottom: 1rem ;
+}
+.top-contact p{
+    margin: 0!important;
+    color: var(--bs-gray-500);
+}
 .top-contact, .top-socials{
     display: flex;
     justify-content: space-between;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: rgb(56, 50, 88);
+    /* color: rgb(56, 50, 88); */
     font-size: small;
+    align-items: center;
 }
 .top-socials{
     gap: 1rem;
-    
+    font-size: small;
+    color: var(--bs-gray-500);    
 }
 nav h3{
     font-weight: bold;
@@ -85,8 +100,7 @@ nav ul{
 /* ------------------------------------ */
 .hero-card{
     padding: 16px;
-    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.15),
-    -3px -3px 3px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--bs-shadow);
     position: relative;
     height: 500px;
     display: flex;
@@ -95,7 +109,7 @@ nav ul{
 .hero-card-content h2{
     color: var(--bs-sky-blue);
     position: absolute;
-    top: 016px;
+    top: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .hero-card-content h4, p{
@@ -120,9 +134,11 @@ nav ul{
 }
 .hero-card-content{
     display: flex;
-    /* place-content: center !important; */
     align-items: center;
+    padding-left: 2rem;
+    height: 300px;
 }
+
 /* -------------------------------------------------- */
 .hero-right-card{
     margin-bottom: 10px;
@@ -153,27 +169,34 @@ nav ul{
     
 } */
 .page-ribbon{
-    display: flex;
+    /* display: flex; */
     /* justify-content: space-between; */
-    height: 3rem;
+    /* height: 3rem; */
     background-color: var(--bs-sky-blue);
     align-items: center;
     color: var(--bs-white);
     margin-bottom: 2rem;
-    /* overflow: hidden; */
-    width: 3000px;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .robbon-scroll{
     display: flex;
-    gap: 10px;
+    justify-content:space-between ;
+    /* gap: 20px !important; */
     overflow: hidden;
-    /* background-color: #495057; */
-    animation: scroll-x 10s linear infinite;
-    width: 900px;
+    background-color: #495057;
+    animation: scroll-x 20s linear infinite;
+    width: 4150px;
+    align-items: center;
+    /* white-space: nowrap; */
 }
 @keyframes scroll-x {
     from {
         transform: translateX(100%);
+        transition-delay: 1s;
+        transition-duration: 1s;
     }
     to {
         transform: translateX(-100%);
@@ -182,19 +205,39 @@ nav ul{
 .robbon-scroll h6 i{
     font-size: larger!important;
 }
-.qoute-text{
+.quote-text{
     font-size: small;
     line-height: 1.3;
     font-style: italic;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     padding: 13px;
     color: var(--bs-primary-white);
-    
+    /* background-color: #0099d3; */
 }
 .quote{
     background-color: #6c757d;
     border-radius: 10px;
-    height: 110px;
+    height: 120px;
+    margin-top: 2rem;
+    position: relative;
+    /* bottom: 3%; */
+    /* left: 5%; */
+    /* right: 55%;  */
+    border: 2px solid var(--bs-sky-blue);
+}
+.hero-card-content .quote .quote-avatar img{
+    border-radius: 50%;
+    height: 100%;
+}
+.hero-card-content .quote .quote-avatar{
+    height: 50px;
+    width: 50px;
+    background-color: #0099d3;
+    position: absolute;
+    left: 45%;
+    bottom: -25%;
+    border-radius: 50%;
+    border: 2px solid var(--bs-sky-blue);
 }
 .carousel-inner img{
     height: 380px;
