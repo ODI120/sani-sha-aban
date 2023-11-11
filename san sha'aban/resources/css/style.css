@@ -46,7 +46,7 @@ body{
     color: var(--bs-dark)!important;
     background-color: var(--bs-primary-white)!important;
     overflow-x: hidden;
-    font-family: 'Poppins', sans-serif !important;
+    /* font-family: 'Poppins', sans-serif !important; */
     /* font-family: 'Roboto', sans-serif !important; */
 }
 .top-contact {
