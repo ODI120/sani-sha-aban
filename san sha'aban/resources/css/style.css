@@ -10,6 +10,7 @@ img{
     object-fit: cover;
     width: 100%;
 }
+
 .btn-primary{
     background-color: var(--bs-sky-blue) !important;
     border: 0px !important;
@@ -24,7 +25,7 @@ img{
     --bs-dark: #a1a1a1;
     --bs-black: #000;
     --bs-white: #fff;
-    --bs-gray: #6c757d;
+    --bs-headings: #081f5c;
     --bs-gray-dark: #343a40;
     --bs-gray-100: #f8f9fa;
     --bs-gray-200: #e9ecef;
@@ -45,6 +46,8 @@ body{
     color: var(--bs-dark)!important;
     background-color: var(--bs-primary-white)!important;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 .top-contact {
     height: 2.4rem;
@@ -107,7 +110,7 @@ nav ul{
     align-items: center;
 }
 .hero-card-content h2{
-    color: var(--bs-sky-blue);
+    color: var(--bs-headings);
     position: absolute;
     top: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -144,7 +147,8 @@ nav ul{
     margin-bottom: 10px;
 }
 .hero-right-card h5{
-    color: var(--bs-sky-blue);
+    color: var(--bs-headings);
+    font-weight: 700;
 }
 .hero-right-card p{
     line-height: 1.5;
@@ -211,7 +215,7 @@ nav ul{
     font-style: italic;
     /* margin-top: 1rem; */
     padding: 13px;
-    color: var(--bs-primary-white);
+    color: var(--bs-primary-white)!important;
     /* background-color: #0099d3; */
 }
 .quote{
@@ -280,6 +284,8 @@ color: var(--bs-sky-blue);
     width: 100%;
     height: 200px;
 }
-.ads {
-
+.ads h6{
+    color: var(--bs-headings);
+    top: 10px;
+    font-weight: 700;
 }
