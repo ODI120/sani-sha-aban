@@ -186,8 +186,8 @@ nav ul{
     justify-content:space-between ;
     /* gap: 20px !important; */
     overflow: hidden;
-    background-color: #495057;
-    animation: scroll-x 20s linear infinite;
+    /* background-color: #495057; */
+    animation: scroll-x  linear 50s infinite;
     width: 4150px;
     align-items: center;
     /* white-space: nowrap; */
@@ -267,4 +267,14 @@ nav ul{
 }
 .trend-card h5{
 color: var(--bs-sky-blue);
+}
+/* ------------------- */
+
+.ads{
+    padding: 14px;
+    background-color: var(--bs-gray-100);
+}
+.ads img{
+    width: 100%;
+    height: 200px;
 }
