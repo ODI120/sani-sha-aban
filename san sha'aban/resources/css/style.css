@@ -16,10 +16,6 @@ img{
     border: 0px !important;
     width: 100%;
 }
-.btn-primary:hover{
-    background-color: var(--bs-headings) !important;
-
-}
 .common{
     display: flex;
     align-items: center;
@@ -272,6 +268,7 @@ nav ul{
     background-color: var(--bs-gray-100);
     line-height: 1.2;
     font-size: 14px;
+    box-shadow: var(--bs-shadow);
 }
 .ads img{
     width: 100%;
@@ -285,11 +282,60 @@ nav ul{
 /* --------------------- */
 
 .politics {
-    background-color: var(--bs-white);
+    background-color: var(--bs-sky-blue);
     padding: 16px;
+    height: 460px;
     
 }
 .politics img{
     height: 190px;
-    width: 185px;
+    width: 160px;
+    /* border-radius: 10px; */
+}
+.p-card{
+    box-shadow: var(--bs-shadow);
+    /* padding: 10px; */
+    background-color: var(--bs-gray-200);
+    line-height: 1.3;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.p-card h6{
+    color: var(--bs-headings);
+    font-weight: 700;
+    text-decoration: underline;
+}
+.p-card p{
+    font-size: 14px;
+}
+/* ..................... */
+.p-card-right{
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.p-card-right img:hover{
+    transform: scale(1.1);
+    transition: all 1000ms ease;
+}
+.p-card-right-txt{
+    /* background-color: #009bd36b; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    color: var(--bs-white);
+    display: flex;
+    align-items: center;
+    place-content: center;
+    flex-direction: column;
+    visibility: hidden;
+}
+.p-card-right-txt:hover{
+    visibility: visible;
+}
+.p-card-right-txt h4{
+    font-weight: 700;
+}
+.p-card-right-txt p{
+    color: var(--bs-white);
 }
