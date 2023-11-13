@@ -19,31 +19,71 @@
         currentIndex = (currentIndex + 1) % messages.length;
     }, 5000);
 
-
-//running text
-
-    const running = [
-        'Message 1 goes here. ',
-        'Message 2 goes here. ',
-        'Message 3 goes here. '
-        
+    //landing page hero section advert
+    
+    const Advert = [
+        { text: '2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani6.jpg' },
+        { text: '3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani1.jpg' },
+        { text: '4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.!..', image: 'resources/img/politics1.jpg' }
+        // Add more messages as needed
     ];
 
-    let currentMessage = 0;
-    let currentPos = 0;
-    const runningElement = document.querySelector('.running-text');
-    runningElement.textContent = running[currentMessage];
+    let AdvertIndex = 0;
+    const AdvertElement = document.querySelector('.advert-text');
+    const AdvertImageElement = document.querySelector('.advert-image');
 
-    function scrollText() {
-        if (currentPos < runningElement.scrollWidth) {
-            currentPos++;
-        } else {
-            currentPos = -runningElement.clientWidth;
-            currentMessage = (currentMessage + 1) % running.length;
-            runningElement.textContent = running[currentMessage];
-        }
-        runningElement.style.transform = `translateX(${-currentPos}px)`;
-        requestAnimationFrame(scrollText);
-    }
+    setInterval(function() {
+        AdvertElement.textContent = Advert[currentIndex].text;
+        AdvertImageElement.src = Advert[currentIndex].image;
 
-    scrollText();
+        currentIndex = (currentIndex + 1) % Advert.length;
+    }, 4000);
+
+    // -----
+
+    const Advert2 = [
+        { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani5.jpg' },
+        { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani4.jpg' },
+        { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/politics1.jpg' }
+        // Add more messages as needed
+    ];
+
+    let Adver2tIndex = 0;
+    const Advert2Element = document.querySelector('.advert2-text');
+    const Advert2ImageElement = document.querySelector('.advert2-image');
+
+    setInterval(function() {
+        Advert2Element.textContent = Advert2[currentIndex].text;
+        Advert2ImageElement.src = Advert2[currentIndex].image;
+
+        currentIndex = (currentIndex + 1) % Advert2.length;
+    }, 5000);
+
+
+// //running text
+
+//     const running = [
+//         'Message 1 goes here. ',
+//         'Message 2 goes here. ',
+//         'Message 3 goes here. '
+        
+//     ];
+
+//     let currentMessage = 0;
+//     let currentPos = 0;
+//     const runningElement = document.querySelector('.running-text');
+//     runningElement.textContent = running[currentMessage];
+
+//     function scrollText() {
+//         if (currentPos < runningElement.scrollWidth) {
+//             currentPos++;
+//         } else {
+//             currentPos = -runningElement.clientWidth;
+//             currentMessage = (currentMessage + 1) % running.length;
+//             runningElement.textContent = running[currentMessage];
+//         }
+//         runningElement.style.transform = `translateX(${-currentPos}px)`;
+//         requestAnimationFrame(scrollText);
+//     }
+
+//     scrollText();

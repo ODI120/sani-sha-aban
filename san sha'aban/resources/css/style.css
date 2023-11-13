@@ -53,7 +53,7 @@ img{
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
     --bs-primary-white: #e3edf7;
-    /* --bs-sky-blue: #840c24; */
+    --bs-dark-red: #840c24;
     --bs-sky-blue: #0099d3;
     --bs-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.15),
     -3px -3px 3px 1px rgba(0, 0, 0, 0.15);
@@ -62,8 +62,6 @@ body{
     color: var(--bs-dark)!important;
     background-color: var(--bs-primary-white)!important;
     overflow-x: hidden;
-    /* font-family: 'Poppins', sans-serif !important; */
-    /* font-family: 'Roboto', sans-serif !important; */
 }
 .top-contact {
     height: 2.4rem;
@@ -119,7 +117,7 @@ nav ul{
 /* ------------------------------------ */
 .hero-card{
     padding: 16px;
-    box-shadow: var(--bs-shadow);
+    /* box-shadow: var(--bs-shadow); */
     position: relative;
     height: 500px;
     display: flex;
@@ -140,7 +138,7 @@ nav ul{
     right: 10px;
     /* top: 0; */
     bottom: -50px;
-    box-shadow: var(--bs-shadow);
+    /* box-shadow: var(--bs-shadow); */
     border-radius: 10px;
 }
 .hero-img img{
@@ -158,6 +156,7 @@ nav ul{
 /* -------------------------------------------------- */
 .hero-right-card{
     margin-bottom: 10px;
+    
 }
 .hero-right-card h5{
     color: var(--bs-headings);
@@ -171,15 +170,16 @@ nav ul{
     text-decoration: none;
 }
 .right-card{
-    padding: 5px;
-    /* background-color: #adb5bd; */
+    padding: 10px;
+    background-color: var(--bs-gray-200);
     border-radius: 10px;
-    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.15),
-    -3px -3px 3px 1px rgba(0, 0, 0, 0.15);
+    line-height: 1;
+    /* box-shadow: var(--bs-shadow); */
 }
 .right-card img{
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 /* ------------------------------------ */
 /* .carousel-item{
@@ -281,7 +281,7 @@ nav ul{
     background-color: var(--bs-gray-100);
     line-height: 1.2;
     font-size: 14px;
-    box-shadow: var(--bs-shadow);
+    /* box-shadow: var(--bs-shadow); */
 }
 .ads img{
     width: 100%;
@@ -331,10 +331,11 @@ nav ul{
     overflow: hidden;
     margin-bottom: 16px;
     border-radius: 10px;
-    box-shadow: var(--bs-shadow);
+    /* box-shadow: var(--bs-shadow); */
 }
 .p-card-right img{
    border-radius: 10px;
+   height: 200px;
 }
 .p-card-right img:hover{
     transform: scale(1.1);
