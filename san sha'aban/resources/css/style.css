@@ -286,6 +286,7 @@ nav ul{
 .ads img{
     width: 100%;
     height: 200px;
+    border-radius: 6px;
 }
 .ads h6{
     color: var(--bs-headings);
@@ -330,6 +331,7 @@ nav ul{
     overflow: hidden;
     margin-bottom: 16px;
     border-radius: 10px;
+    box-shadow: var(--bs-shadow);
 }
 .p-card-right img{
    border-radius: 10px;
