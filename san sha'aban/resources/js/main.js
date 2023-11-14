@@ -1,5 +1,20 @@
+    // dropdown nav
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
 
-    // Dynamically update the running text content infinitely
+    toggleBtn.onclick = function() {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleIcon.classList = isOpen
+        ? 'bi bi-x'
+        : 'bi bi-list'
+    }
+
+   
+   
+   // Dynamically update the running text content infinitely
 
     const messages = [
         { text: '2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quisquam eius hic sed, pariatur sint solutadistinctio quam inventore est vitae excepturi cumquein voluptate suscipit quasi similique obcaecati! Perspiciatis!.', image: 'resources/img/sani6.jpg' },
@@ -24,7 +39,7 @@
     const Advert = [
         { text: '2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani6.jpg' },
         { text: '3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani1.jpg' },
-        { text: '4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.!..', image: 'resources/img/politics1.jpg' }
+        { text: '4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?. ', image: 'resources/img/politics1.jpg' }
         // Add more messages as needed
     ];
 
