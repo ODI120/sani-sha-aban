@@ -11,8 +11,6 @@
         ? 'bi bi-x'
         : 'bi bi-list'
     }
-
-   
    
    // Dynamically update the running text content infinitely
 
@@ -75,30 +73,57 @@
     }, 5000);
 
 
-// //running text
+    const Advert3 = [
+        { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani5.jpg' },
+        { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani4.jpg' },
+        { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/politics1.jpg' }
+        // Add more messages as needed
+    ];
 
-//     const running = [
-//         'Message 1 goes here. ',
-//         'Message 2 goes here. ',
-//         'Message 3 goes here. '
-        
-//     ];
+    let Adver3tIndex = 0;
+    const Advert3Element = document.querySelector('.advert3-text');
+    const Advert3ImageElement = document.querySelector('.advert3-image');
 
-//     let currentMessage = 0;
-//     let currentPos = 0;
-//     const runningElement = document.querySelector('.running-text');
-//     runningElement.textContent = running[currentMessage];
+    setInterval(function() {
+        Advert3Element.textContent = Advert3[currentIndex].text;
+        Advert3ImageElement.src = Advert3[currentIndex].image;
 
-//     function scrollText() {
-//         if (currentPos < runningElement.scrollWidth) {
-//             currentPos++;
-//         } else {
-//             currentPos = -runningElement.clientWidth;
-//             currentMessage = (currentMessage + 1) % running.length;
-//             runningElement.textContent = running[currentMessage];
-//         }
-//         runningElement.style.transform = `translateX(${-currentPos}px)`;
-//         requestAnimationFrame(scrollText);
-//     }
+        currentIndex = (currentIndex + 1) % Advert3.length;
+    }, 5000);
 
-//     scrollText();
+    const Advert4 = [
+        { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani5.jpg' },
+        { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani4.jpg' },
+        { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/politics1.jpg' }
+        // Add more messages as needed
+    ];
+
+    let Adver4tIndex = 0;
+    const Advert4Element = document.querySelector('.advert4-text');
+    const Advert4ImageElement = document.querySelector('.advert4-image');
+
+
+    setInterval(function() {
+        Advert4Element.textContent = Advert4[currentIndex].text;
+        Advert4ImageElement.src = Advert4[currentIndex].image;
+
+        currentIndex = (currentIndex + 1) % Advert4.length;
+    }, 6000);
+
+
+// ====================scroll show/hiden======
+
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) =>{
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+        else {
+            entry.target.classList.remove('show');
+        }
+    })
+})
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
