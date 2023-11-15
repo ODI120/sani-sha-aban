@@ -460,10 +460,15 @@ nav h3 a{
     padding: 0 !important;
     overflow: hidden;
     border-radius: 10px;
+    
 }
 .m-card-p p{
     padding-left: 10px;
     padding-right: 10px;
+}
+.m-card-p img{
+    height: 170px;
+    width: 100%;
 }
 .m-card-p img:hover{
     transform: scale(1.1);
