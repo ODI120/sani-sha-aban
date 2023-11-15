@@ -12,7 +12,8 @@
         : 'bi bi-list'
     }
    
-   // Dynamically update the running text content infinitely
+   // Dynamically update the running text content infinitely for quote
+
 
     const messages = [
         { text: '2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quisquam eius hic sed, pariatur sint solutadistinctio quam inventore est vitae excepturi cumquein voluptate suscipit quasi similique obcaecati! Perspiciatis!.', image: 'resources/img/sani6.jpg' },
@@ -31,7 +32,7 @@
 
         currentIndex = (currentIndex + 1) % messages.length;
     }, 5000);
-
+// ----------------
     //landing page hero section advert
     
     const Advert = [
@@ -72,7 +73,7 @@
         currentIndex = (currentIndex + 1) % Advert2.length;
     }, 5000);
 
-
+// ------------
     const Advert3 = [
         { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani5.jpg' },
         { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani4.jpg' },
@@ -90,7 +91,7 @@
 
         currentIndex = (currentIndex + 1) % Advert3.length;
     }, 5000);
-
+// ----------
     const Advert4 = [
         { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani5.jpg' },
         { text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur?.', image: 'resources/img/sani4.jpg' },
