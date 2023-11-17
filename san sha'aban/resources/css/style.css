@@ -493,7 +493,25 @@ nav h3 a{
     transition: all 1000ms ease;
 }
 /* ..................... */
+.advert4-text {
+    animation: fadeInOut 1s ease-out;
+}
 
+.advert4-image {
+  
+    animation: fadeInOut 1s ease-out;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* ----------------------------- */
 
 /* .info{

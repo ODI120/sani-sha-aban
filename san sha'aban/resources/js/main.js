@@ -112,6 +112,12 @@
     }, 6000);
 
 
+// -----------transition----------
+
+
+
+
+
 // ====================scroll show/hiden======
 
 const observer = new IntersectionObserver((entries) =>{
