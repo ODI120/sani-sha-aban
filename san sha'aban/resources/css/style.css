@@ -427,6 +427,13 @@ nav h3 a{
         margin-top: 1.6rem !important;
     }
 }
+@media (max-width:426px){
+    .business .col-b-card{
+        width: 330px !important;
+        flex-direction:row !important;
+
+    }
+}
 /* -------------------------------------------------- */
 .hero-right-card{
     margin-bottom: 10px;
@@ -499,6 +506,24 @@ nav h3 a{
     font-size: larger!important;
 }
 /* --------- */
+@media (max-width:768px){
+    .politics img{
+        height:330px;
+        width: 250px;
+    }
+    /* .politics p{
+        width: 400px;
+    } */
+    .btn-primary{
+        width:40%;
+    }
+}
+@media (max-width:576px){
+    .politics{
+        text-align: center !important;
+    }
+}
+/* -------------- */
 .carousel-inner img{
     height: 380px;
 }
@@ -660,13 +685,24 @@ nav h3 a{
     font-size: small;
 }
 
-/* @media (min-width:374px) and (max-width:575.98px) {
-    .col_m-card{
+@media (max-width:575.98px) {
+    .all-adverts .card-holder{
+        width: 260px !important;
+        flex-direction:row;
+    }
+    .all-adverts .card-holder .btn-primary{
+        width:100%;
+    }
+    .all-adverts-row .row{
+        display: flex ;
+        /* flex-direction: column; */
+        align-items: center;
+        place-content:center;
+    }
+}
+@media (max-width:426px) {
+    .all-adverts .card-holder{
         width: 330px !important;
     }
-    .row{
-        display: flex ;
-        flex-direction: column;
-        align-items: center;
-    }
-} */
+    
+}
