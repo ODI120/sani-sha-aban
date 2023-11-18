@@ -16,9 +16,9 @@
 
 
     const messages = [
-        { text: '2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quisquam eius hic sed, pariatur sint solutadistinctio quam inventore est vitae excepturi cumquein voluptate suscipit quasi similique obcaecati! Perspiciatis!.', image: 'resources/img/sani6.jpg' },
-        { text: '3 pariatur sint solutadistinctio quam inventore est vitae excepturi cumquein voluptate suscipit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quisquam eius hic sed, quasi similique obcaecati! Perspiciatis!.', image: 'resources/img/sani1.jpg' },
-        { text: '4 Quas quisquam eius hic sed, pariatur sint solutadistinctio quam inventore est vitae excepturi Lorem ipsum dolor, sit amet consectetur adipisicing elit.  cumquein voluptate suscipit quasi similique obcaecati! Perspiciatis!..', image: 'resources/img/politics1.jpg' }
+        { text: '2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quisquam eius hic sed, pariatur sint solutadistinctio quam inventore est vitae excepturi cumquein voluptate suscipit quasi similique obcaecati!.', image: 'resources/img/sani6.jpg' },
+        { text: '3 pariatur sint solutadistinctio quam inventore est vitae excepturi cumquein voluptate suscipit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas quisquam eius hic sed, quasi similique obcaecati!.', image: 'resources/img/sani1.jpg' },
+        { text: '4 Quas quisquam eius hic sed, pariatur sint solutadistinctio quam inventore est vitae excepturi Lorem ipsum dolor, sit amet consectetur adipisicing elit.  cumquein voluptate suscipit quasi similique obcaecati!.', image: 'resources/img/politics1.jpg' }
         // Add more messages as needed
     ];
 
