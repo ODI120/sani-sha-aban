@@ -11,8 +11,8 @@
         ? 'bi bi-x'
         : 'bi bi-list'
     }
-   
-   // Dynamically update the running text content infinitely for quote
+
+    // Dynamically update the running text content infinitely for quote
 
 
     const messages = [

@@ -125,35 +125,6 @@ body{
     font-size: small;
     color: var(--bs-gray-500);    
 }
-/* --------- */
-/* nav h3{
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-}
-nav a{
-    text-decoration: none;
-    color: var(--bs-gray-100);
-    font-size: large;
-    font-weight: 500;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
-    background-color: var(--bs-sky-blue);
-    margin-top: .4rem;
-    padding: 2rem !important;
-    color: #f8f9fa;
-}
-
-nav ul{
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    margin: 0;
-} */
 
 /* =============================== */
 nav{
@@ -194,7 +165,7 @@ nav a{
 }
 
 .nav-link a:hover{
-    color: var(--bs-warning);
+    color: var(--bs-headings);
     transition: all 100ms ease;
 }
 
@@ -838,6 +809,85 @@ nav h3 a{
 @media (max-width:426px) {
     .all-adverts .card-holder{
         width: 330px !important;
+    }
+    
+}
+/* -------------------- */
+/* ABOUT-PAGE */
+
+.about img{
+   height: 350px;
+}
+
+.biography{
+    text-align: justify;
+}
+@media (max-width:769px) {
+    .about {
+        margin: 0px;
+    }
+    .biography{
+        padding: 20px;
+    }
+}
+@media (max-width:767px) {
+   .about-img img{
+        display: none;
+    }
+
+}
+@media (max-width:376px) {
+    /* .about {
+        width: 290px;
+    } */
+    .biography{
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+/* -------------------- */
+footer{
+    background-color: var(--bs-sky-blue);
+    height: 40vh;
+    align-items: center;
+    display: flex;
+    line-height: 1.4;
+}
+footer h5{
+    color: var(--bs-headings);
+}
+footer p{
+    color: var(--bs-gray-100);
+}
+footer a{
+    color: var(--bs-gray-100);
+    text-decoration: none;
+    text-decoration: italic; 
+}
+footer .line{
+    background-color: var(--bs-gray-100);
+    width: 15%;
+    margin-bottom: 10px;
+}
+footer ul{
+    padding: 0;
+}
+@media (max-width:769px) {
+    footer{
+        padding-top: 16px;
+        height: fit-content;
+    }
+    
+}
+@media (max-width:579px) {
+    footer{
+        padding: 30px;
+        text-align: center;
     }
     
 }
