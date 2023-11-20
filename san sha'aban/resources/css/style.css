@@ -9,6 +9,15 @@ section{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+@media (max-width:576px){
+    section{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+h1,h2,h3{
+    color: var(--bs-headings) !important;
+}
 img{
     display: block;
     object-fit: cover;
@@ -160,6 +169,7 @@ nav{
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     border-top-left-radius: 100px;
+    position: relative;
 }
 
 .nav-link{
@@ -167,6 +177,8 @@ nav{
     gap: 1.5rem;
     align-items: center;
     margin: 0;
+    position: absolute;
+    right: 4rem;
 }
 .toggle_btn i{
     font-size: xx-large;
@@ -475,7 +487,7 @@ nav h3 a{
     background-color: var(--bs-sky-blue);
     align-items: center;
     color: var(--bs-white);
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     overflow: hidden;
     width: 100%;
     padding-top: 10px;
@@ -505,23 +517,59 @@ nav h3 a{
 .robbon-scroll h6 i{
     font-size: larger!important;
 }
-/* --------- */
 @media (max-width:768px){
+    .page-ribbon{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+    }
+
+    hr{
+        display: none;
+    }
+}
+
+/* --------- */
+@media (max-width:769px){
     .politics img{
         height:330px;
         width: 250px;
     }
-    /* .politics p{
-        width: 400px;
-    } */
+   
     .btn-primary{
         width:40%;
+    }
+    .Political-Activities h1{
+        margin-bottom: 1rem;
     }
 }
 @media (max-width:576px){
     .politics{
         text-align: center !important;
+        margin: auto;
+        width: 400px;
     }
+    .politics img{
+        display: none;
+    }
+   
+}
+@media (max-width:576px){
+    .Sponsorships{
+        text-align: center;
+    }
+}
+@media (max-width:376px){
+    .politics{
+        width: 300px;
+    }
+    .politics img{
+        display: none;
+    }
+    .my-carousel{
+        height: 140px !important;
+    }
+   
 }
 /* -------------- */
 .carousel-inner img{
@@ -541,6 +589,51 @@ nav h3 a{
 .trends p{
     line-height: 1.4;
 }
+.trends .line{
+    margin-bottom: .5rem;
+}
+@media (max-width:769px){
+    .trends p{
+        line-height: 1.3;
+        font-size: 14px;
+    }
+}
+@media (max-width:601px){
+    .carousel-inner img{
+        height: 270px;
+
+    }
+    .trends .line{
+        display: none;
+    }
+    .my-carousel{
+        width: 480px !important;
+    }
+    .carusal-container{
+        display: flex;
+        place-content: center;
+    }
+    .carousel-caption p{
+        color: #fff;
+    }
+    .trends {
+        line-height: 1.3;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    /* .trends {
+        margin-top: 1rem;
+        margin: auto !important;
+        width: 450px;
+    } */
+}
+@media (max-width:376px){
+    .my-carousel{
+        height: 270px !important;
+    }
+}
+
 /* ------------------- */
 .ads img{
     width: 100%;
@@ -635,6 +728,48 @@ nav h3 a{
 }
 .info-content h6{
     color: var(--bs-gray-300);
+}
+@media (max-width:769px){
+    .info-card{
+        width: 90%;
+    }
+}
+@media (max-width:601px){
+    .info-card .col_m-card{
+        width: 170px;
+    }
+}
+@media (max-width:427px){
+    .info-card .col_m-card{
+        width: 130px;
+    }
+    .info-content p{
+        display: none;
+    }
+    .info-content .info-avatar{
+        display: flex;
+        place-content: center !important;
+        align-items: center;
+    }
+    .info-avatar img{
+        height: 80px !important;
+        width: 80px !important;        
+    }
+    .info-card{
+        height: 200px;
+    }
+}
+@media (max-width:376px){
+    .info-card .col_m-card{
+        width: 110px;
+    }
+    /* .info-content p{
+        display: none;
+    }
+    .info-avatar img{
+        height: 80px !important;
+        width: 80px !important;
+    } */
 }
 /* --------------- */
 .center-items{
