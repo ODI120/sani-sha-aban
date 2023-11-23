@@ -822,9 +822,29 @@ nav h3 a{
 /* ------------------ */
 /* BUSINESS PAGE */
 
-.business-page img{
-    height: 300px;
+.business-header{
+    height: 100vh;
+    background-image: url(../../resources/img/poloclub2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.business-hero h1{
+    color: var(--bs-white) !important;
+    margin-top: 30px;
+}
+.business-page .business-page-intro img{
+    height: 350px;
     width: 100%;
+}
+@media (max-width:769px){  
+    .business-page .business-page-intro img{
+        height: 340px;
+        width: 250px;
+    }
+    .business-page .business-page-intro{
+        margin-bottom: 16px;
+    }
 }
 /* -------------------- */
 footer{
