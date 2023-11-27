@@ -111,6 +111,13 @@ body{
     margin: 0!important;
     color: var(--bs-gray-500);
 }
+.top-contact a{
+    margin: 0!important;
+    color: var(--bs-gray-500);
+}
+.top-contact a:hover{
+    color: var(--bs-sky-blue);
+}
 .top-contact, .top-socials{
     display: flex;
     justify-content: space-between;
