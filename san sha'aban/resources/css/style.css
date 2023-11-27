@@ -5,7 +5,13 @@
     box-sizing: border-box;
     list-style: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 section{
+    scroll-margin-top: 0px;
+    scroll-behavior: smooth;
+    transition-delay: 50ms;
     padding-top: 30px;
     padding-bottom: 30px;
 }
