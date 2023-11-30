@@ -837,7 +837,9 @@ nav h3 a{
 
 .business-header{
     height: 100vh;
-    background-image: url(../../resources/img/poloclub2.jpg);
+    background-image: url(../../resources/img/biz-1.jpg);
+    background-blend-mode: overlay;
+    background-color: var(--bs-gray-900);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
