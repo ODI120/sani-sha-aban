@@ -785,13 +785,13 @@ nav h3 a{
 }
 
 .Sponsorships .m_card{
-    background-image: url(../img/med-1.jpg);
+    background-image: url(../img/med-4.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px;
     color: var(--bs-black) !important;
-    background-color: var(--bs-gray-300);
+    background-color: var(--bs-gray-500);
     background-blend-mode: overlay;
 }
 /* .Sponsorships .m_card p{
