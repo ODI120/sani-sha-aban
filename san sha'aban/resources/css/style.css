@@ -784,6 +784,20 @@ nav h3 a{
     font-size: small;
 }
 
+.Sponsorships .m_card{
+    background-image: url(../img/med-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    color: var(--bs-black) !important;
+    background-color: var(--bs-gray-400);
+    background-blend-mode: overlay;
+}
+/* .Sponsorships .m_card p{
+    color: var(--bs-black) !important;
+} */
+
 @media (max-width:575.98px) {
     .all-adverts .card-holder{
         width: 260px !important;
