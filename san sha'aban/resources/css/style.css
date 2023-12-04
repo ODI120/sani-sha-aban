@@ -295,7 +295,7 @@ nav h3 a{
         width: unset;
         border-radius: none;
     }
-}
+}  
 /* ------------------------------------ */
 .hero-card{
     padding: 16px;
@@ -548,6 +548,9 @@ nav h3 a{
 .carousel-caption p{
     color: #fff;
 }
+.carousel h2{
+    color: var(--bs-gray-100) !important;
+}
 /* .............. */
 .trends h3{
     color: var(--bs-headings);
@@ -733,6 +736,15 @@ nav h3 a{
 .business{
     flex-direction: row;
 }
+.m_card a{
+    text-decoration: none;
+}
+.m_card h6{
+    color: var(--bs-headings);
+}
+.m_card h5{
+    color: var(--bs-headings);
+}
 .m_card{
     display: flex;
     flex-direction: column;
@@ -847,10 +859,26 @@ nav h3 a{
 .business-hero h1{
     color: var(--bs-white) !important;
     margin-top: 30px;
+    font-weight: 900;
+    font-size: 60px !important;
 }
 .business-page .business-page-intro img{
     height: 350px;
     width: 100%;
+}
+.business-hero{
+    height: 100%;
+    place-content: center;
+    align-items: center;
+}
+.buz-header{
+    margin-top: 8rem;
+    text-align: center;
+}
+.buz-header h2{
+    font-size: 40px !important;
+    font-weight: 700;
+    color: var(--bs-white) !important;
 }
 @media (max-width:769px){  
     .business-page .business-page-intro img{
