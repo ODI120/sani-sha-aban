@@ -791,7 +791,7 @@ nav h3 a{
     background-repeat: no-repeat;
     border-radius: 8px;
     color: var(--bs-black) !important;
-    background-color: var(--bs-gray-500);
+    background-color: var(--bs-primary-white);
     background-blend-mode: overlay;
 }
 /* .Sponsorships .m_card p{
