@@ -920,10 +920,10 @@ nav h3 a{
 /* ------------------ */
 /* BUSINESS PAGE */
 .business-header{
-    height: 100vh;
+    height: fit-content;
     background-image: url(../../resources/img/biulding-1.jpg);
+    background-color: var(--bs-gray-900);
     background-blend-mode: overlay;
-    background-color: var(--bs-graby-700);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -935,13 +935,20 @@ nav h3 a{
     object-fit: cover;
     display: block;
 }
+/* .business-img{
+    height: 100%;
+} */
 .business-hero{
     margin-top: 20px !important;
     height: 90%;
 }
 .business-txt{
     background-color: #343a4066;
+    backdrop-filter: blur(3px);
     padding: 2rem;
+    /* margin-top: 8rem; */
+    border-radius: 10px;
+
 }
 .business-hero h1{
     color: var(--bs-gray-100) !important;
@@ -956,9 +963,16 @@ nav h3 a{
     text-align: justify;
 }
 @media (max-width:769px) {
-    .business-hero h1{
-        font-size: 3rem;
+    .business-txt{
+        margin-top: 2rem;
     }
+    .business-hero h1{
+        font-size: 2rem;
+    }
+    .business-hero h2{
+        font-size: 30px;
+    }
+
 }
 
 @media (max-width:601px) {
@@ -978,9 +992,21 @@ nav h3 a{
 }
 @media (max-width:576px) {
     .business-header img{
-        height: 350px;
+        height: 370px;
         width: 300px;
         margin-top: 20px;
+    }
+    .business-txt{
+        background-color: none;
+        margin-top: 10px;
+    }
+    .business-hero h1{
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    .business-hero h2{
+        font-weight: 500;
+        font-size: 2rem;
     }
 }
 @media (max-width:376px) {
