@@ -913,7 +913,6 @@ nav h3 a{
 }
 /* ----------------------------- */
 /* POLITICAL PAGE */
-
 .plitical-goals img{
     height: 300px;
     width: 100%;
@@ -922,13 +921,14 @@ nav h3 a{
 /* BUSINESS PAGE */
 .business-header{
     height: 100vh;
-    background-image: url(../../resources/img/biulding-2.jpg);
+    background-image: url(../../resources/img/biulding-1.jpg);
     background-blend-mode: overlay;
     background-color: var(--bs-graby-700);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .business-header img{
     width: 86%;
