@@ -820,7 +820,6 @@ nav h3 a{
 /* -------------------- */
 /* ABOUT-PAGE */
 .about-header{
-    /* height: fit-content; */
     background-image: url(../../resources/img/biulding-2.jpg);
     background-blend-mode: overlay;
     background-color: var(--bs-graby-600);
@@ -874,6 +873,14 @@ nav h3 a{
     }
 
 }
+@media (max-width:716px) {
+    .about-hero h1{
+        font-size: 2rem;
+    }
+    .about-hero h2{
+        font-size: 25px;
+    }
+}
 @media (max-width:601px) {
     .about-hero h1{
         font-weight: 900;
@@ -890,9 +897,7 @@ nav h3 a{
     }
 }
 @media (max-width:576px) {
-    /* .about-hero{
-        display: block !important;
-    } */
+
     .about-header img{
         height: 350px;
         width: 300px;
@@ -900,9 +905,7 @@ nav h3 a{
     }
 }
 @media (max-width:376px) {
-    /* .about {
-        width: 290px;
-    } */
+
     .biography{
         padding: 10px;
     }
