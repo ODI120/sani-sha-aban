@@ -215,13 +215,12 @@ nav h3 a{
 }
 
 .dropdown_menu a:hover{
-    color: rgb(255, 247, 0);
+    color: var(--bs-headings);
     text-shadow: 25%;
     font-size: large;
 }
 
 .dropdown_menu li:hover{
-    background-color: rgb(65, 65, 140);
     transition: all 100ms ease;
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
@@ -1065,6 +1064,10 @@ footer a{
     color: var(--bs-gray-100);
     text-decoration: none;
     text-decoration: italic; 
+}
+footer a:hover{
+    color: var(--bs-headings);
+ 
 }
 footer .line{
     background-color: var(--bs-gray-100);
