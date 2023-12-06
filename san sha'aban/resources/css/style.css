@@ -88,7 +88,6 @@ img{
     opacity: 0;
     transition: all 1s ease;
 }
-
 .show{
     filter: blur(0);
     transform: translateY(0);
@@ -138,7 +137,6 @@ body{
     font-size: small;
     color: var(--bs-gray-500);    
 }
-
 /* =============================== */
 nav{
     display: flex;
@@ -155,7 +153,6 @@ nav{
     border-top-left-radius: 100px;
     position: relative;
 }
-
 .nav-link{
     display: flex;
     gap: 1.5rem;
@@ -188,7 +185,6 @@ nav h3 a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
 }
-
 /* =====================DROPDOWN NAV.===================== */
 .dropdown_menu{
     background: var(--bs-sky-blue);
@@ -202,7 +198,6 @@ nav h3 a{
     z-index: 11;
     transition: height 0.5s ease;
 }
-
 .dropdown_menu.open{
     height: 250px ;
 }

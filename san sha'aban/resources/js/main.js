@@ -111,11 +111,7 @@
         currentIndex = (currentIndex + 1) % Advert4.length;
     }, 6000);
 
-
 // -----------transition----------
-
-
-
 
 
 // ====================scroll show/hiden======
@@ -134,3 +130,21 @@ const observer = new IntersectionObserver((entries) =>{
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// ===============================
+
+ // -----------
+ const politics = [
+    { text:'1 Lorem ipsum dolor sit amet consectetur adipisicing elit.  Corrupti, neque. Delectus tempora quam, repellendus facilis quas dolorem distinctio possimus molestias debitis eum sunt reiciendis perferendis hic deleniti autem quae, ipsum voluptatem aut nihil corrupti culpa itaque laudantium iure. Qui, saepe neque quaerat dolore temporibus fugit eum odit placeat ipsa dolores earum quidem laborum. Sit similique esse, omnis asperiores deserunt reprehenderit distinctio. Aut dolores beatae eligendi illum nesciunt cum doloremque sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, neque. Delectus tempora quam, repellendus facilis quas dolorem distinctio possimus molestias debitis eum sunt reiciendis perferendis hic deleniti autem quae, ipsum voluptatem aut nihil corrupti culpa itaque laudantium iure. Qui, saepe neque quaerat dolore temporibus fugit eum odit placeat ipsa dolores earum quidem laborum. Sit similique esse, omnis asperiores deserunt reprehenderit distinctio. Aut dolores beatae eligendi illum nesciunt cum doloremque sequi. reiciendis perferendis hic deleniti autem quae, ipsum voluptatem '},
+    { text:'2 Lorem ipsum dolor sit amet consectetur adipisicing elit.  Corrupti, neque. Delectus tempora quam, repellendus facilis quas dolorem distinctio possimus molestias debitis eum sunt reiciendis perferendis hic deleniti autem quae, ipsum voluptatem aut nihil corrupti culpa itaque laudantium iure. Qui, saepe neque quaerat dolore temporibus fugit eum odit placeat ipsa dolores earum quidem laborum. Sit similique esse, omnis asperiores deserunt reprehenderit distinctio. Aut dolores beatae eligendi illum nesciunt cum doloremque sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, neque. Delectus tempora quam, repellendus facilis quas dolorem distinctio possimus molestias debitis eum sunt reiciendis perferendis hic deleniti autem quae, ipsum voluptatem aut nihil corrupti culpa itaque laudantium iure. Qui, saepe neque quaerat dolore temporibus fugit eum odit placeat ipsa dolores earum quidem laborum. Sit similique esse, omnis asperiores deserunt reprehenderit distinctio. Aut dolores beatae eligendi illum nesciunt cum doloremque sequi. reiciendis perferendis hic deleniti autem quae, ipsum voluptatem '},
+    { text:'3 Lorem ipsum dolor sit amet consectetur adipisicing elit.  Corrupti, neque. Delectus tempora quam, repellendus facilis quas dolorem distinctio possimus molestias debitis eum sunt reiciendis perferendis hic deleniti autem quae, ipsum voluptatem aut nihil corrupti culpa itaque laudantium iure. Qui, saepe neque quaerat dolore temporibus fugit eum odit placeat ipsa dolores earum quidem laborum. Sit similique esse, omnis asperiores deserunt reprehenderit distinctio. Aut dolores beatae eligendi illum nesciunt cum doloremque sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, neque. Delectus tempora quam, repellendus facilis quas dolorem distinctio possimus molestias debitis eum sunt reiciendis perferendis hic deleniti autem quae, ipsum voluptatem aut nihil corrupti culpa itaque laudantium iure. Qui, saepe neque quaerat dolore temporibus fugit eum odit placeat ipsa dolores earum quidem laborum. Sit similique esse, omnis asperiores deserunt reprehenderit distinctio. Aut dolores beatae eligendi illum nesciunt cum doloremque sequi. reiciendis perferendis hic deleniti autem quae, ipsum voluptatem '},
+
+];
+
+let politicsIndex = 1;
+const politicsElement = document.querySelector('.Politics-text');
+
+setInterval(function() {
+    politicsElement.textContent = politics[currentIndex].text;
+    currentIndex = (currentIndex + 1) % politics.length;   
+}, 5000);
