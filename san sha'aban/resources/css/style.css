@@ -104,6 +104,10 @@ img{
 }
 /* ....... */
 body{
+    background-image: url(../img/6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--bs-dark)!important;
     background-color: var(--bs-primary-white)!important;
     overflow-x: hidden;
