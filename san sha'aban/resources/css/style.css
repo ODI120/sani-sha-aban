@@ -20,6 +20,11 @@ section{
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    .heading{
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 16px;
+    }
 }
 h1,h2,h3{
     color: var(--bs-headings) !important;
@@ -522,15 +527,9 @@ nav h3 a{
     }
 }
 @media (max-width:576px){
-    .politics{
-        text-align: center !important;
-        margin: auto;
-        width: 400px;
-    }
     .politics img{
         display: none;
     }
-   
 }
 @media (max-width:576px){
     .Sponsorships{
@@ -547,7 +546,6 @@ nav h3 a{
     .my-carousel{
         height: 140px !important;
     }
-   
 }
 /* -------------- */
 .carousel-inner img{
@@ -704,13 +702,26 @@ nav h3 a{
     .info-card .col_m-card{
         width: 170px;
     }
+    .info-avatar img{
+        height: 80px !important;
+        width: 80px !important;        
+    }
+}
+@media (max-width:539px){
+    .info-card .col_m-card{
+        width: 130px;
+    }
+    .info-avatar img{
+        height: 70px !important;
+        width: 70px !important;        
+    }
+    .info-content p{
+        display: none;
+    }
 }
 @media (max-width:427px){
     .info-card .col_m-card{
         width: 130px;
-    }
-    .info-content p{
-        display: none;
     }
     .info-content .info-avatar{
         display: flex;
@@ -730,7 +741,7 @@ nav h3 a{
         width: 110px;
     }
 }
-@media (max-width:321px){
+@media (max-width:357px){
     .info-card .col_m-card{
         width: 90px;
     }
@@ -936,7 +947,7 @@ nav h3 a{
 /* ------------------ */
 /* BUSINESS PAGE */
 .business-header{
-    height: fit-content;
+    /* height: fit-content; */
     background-image: url(../../resources/img/biulding-1.jpg);
     background-color: var(--bs-gray-600);
     background-blend-mode: overlay;
