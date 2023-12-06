@@ -422,6 +422,18 @@ nav h3 a{
 
     }
 }
+@media (max-width:340px){
+    .quote{
+        height: 160px;
+        margin: auto;
+        width: auto;
+    }
+    .hero-card-content .quote .quote-avatar{
+        left: 43%;
+        bottom: -20%;
+
+    }
+}
 /* -------------------------------------------------- */
 .hero-right-card{
     margin-bottom: 10px;
@@ -717,13 +729,15 @@ nav h3 a{
     .info-card .col_m-card{
         width: 110px;
     }
-    /* .info-content p{
-        display: none;
+}
+@media (max-width:321px){
+    .info-card .col_m-card{
+        width: 90px;
     }
     .info-avatar img{
-        height: 80px !important;
-        width: 80px !important;
-    } */
+        height: 50px !important;
+        width: 50px !important;        
+    }
 }
 /* --------------- */
 .center-items{
@@ -1050,6 +1064,22 @@ nav h3 a{
     }
 
 }
+/* ------------ */
+.phylanthropist-header{
+    background-image: url(../../resources/img/biz-2.jpg);
+    background-blend-mode: overlay;
+    background-color: var(--bs-graby-600);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.phylanthropist-header img{
+    width: 86%;
+    object-fit: cover;
+    display: block;
+}
+
 /* -------------------- */
 footer{
     background-color: var(--bs-sky-blue);
