@@ -511,6 +511,9 @@ nav h3 a{
     width: 4150px;
     align-items: center;
 }
+.robbon-scroll h6{
+    color: var(--bs-gray-100) !important;
+}
 @keyframes scroll-x {
     from {
         transform: translateX(100%);
