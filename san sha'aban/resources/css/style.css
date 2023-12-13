@@ -26,6 +26,21 @@ section{
         margin-bottom: 16px;
     }
 }
+footer .nav-item .active{
+    padding: 0px 0px 1px 0px;
+    color: var(--bs-headings);
+    border-bottom: 1px solid var(--bs-gray-100) !important;
+    border-radius: 0;
+
+}
+.active{
+    padding: 0px 0px 6px 0px;
+    color: var(--bs-headings);
+    border-bottom: 2px solid var(--bs-primary-white);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+}
 h1,h2,h3{
     color: var(--bs-headings) !important;
 }
@@ -164,7 +179,7 @@ nav{
 }
 .nav-link{
     display: flex;
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
     align-items: center;
     margin: 0;
     position: absolute;
@@ -182,10 +197,16 @@ nav a{
     font-size: large;
     font-weight: 500;
 }
-
+.nav-link a{
+    padding: 0px 8px 6px 8px;
+}
 .nav-link a:hover{
     color: var(--bs-headings);
     transition: all 100ms ease;
+    border-bottom: 2px solid var(--bs-primary-white);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
 }
 
 nav h3 a{
