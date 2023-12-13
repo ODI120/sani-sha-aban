@@ -26,6 +26,9 @@ section{
         margin-bottom: 16px;
     }
 }
+footer .copyright{
+    font-size: 12px;
+}
 footer .nav-item .active{
     padding: 0px 0px 1px 0px;
     color: var(--bs-headings);
@@ -41,7 +44,7 @@ footer .nav-item .active{
     border-bottom-right-radius: 6px;
 
 }
-h1,h2,h3{
+h1,h2,h3,h4,h5,h6{
     color: var(--bs-headings) !important;
 }
 img{
