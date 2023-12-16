@@ -507,8 +507,8 @@ nav h3 a{
     display: flex;
     justify-content:space-between ;
     overflow: hidden;
-    animation: scroll-x  linear 50s infinite;
-    width: 4150px;
+    animation: scroll-x linear 50s infinite;
+    width: 2550px;
     align-items: center;
 }
 .robbon-scroll h6{
